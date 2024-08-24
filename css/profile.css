@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #212329;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    padding: 1rem;
+}
+
+.model_bg_color {
+    background-color: #16181F;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile_container {
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+    /* height: 100vh; */
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile_info_container {
+    display: flex;
+    width: 100%;
+    height: 78vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 5rem;
+}
+
+.profile {
+    /* width: 600px; */
+    /* border: 1px solid red; */
+    padding: 2rem;
+    width: 100%;
+}
+
+.profile_info {
+    max-width: 600px;
+    min-width: 100px;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_label {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.before_image_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.image_container {
+    height: 120px;
+    width: 120px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    margin-right: 3rem;
+}
+
+.image_container img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.image_info_container {
+    height: 150px;
+    width: 150px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    /* margin-right: 3rem; */
+}
+
+.image_info_container img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.input_box {
+    width: 100%;
+}
+
+.input_box input,
+textarea {
+    background-color: #0F1014 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.input_box input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.724) !important;
+}
+
+.btn_contianer {
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+    justify-content: space-evenly;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 24;
+    cursor: pointer;
+
+}
+
+.form_btn {
+    display: flex;
+    justify-content: flex-end;
+}

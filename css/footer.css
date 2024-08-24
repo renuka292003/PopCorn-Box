@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #0c111b;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    flex: 0 0 30%; /* Adjust the width as needed */
+}
+
+h4 {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Additional styles at the end of the file */
+.social-icons a {
+    margin-right: 20px;
+}
+
+/* New class for increased specificity */
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-link:hover {
+    color: rgb(88, 88, 255);
+}
