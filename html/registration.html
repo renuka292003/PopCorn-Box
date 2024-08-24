@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"  crossorigin="anonymous">
+  <title>Sign Up</title>
+  
+  <script src="/js/plugins.js"></script>
+  <script src="/js/app.js"></script>
+  
+  <script src="/js/login.js"></script>
+  
+<style>
+  input{
+    opacity: 0.8;
+   
+    
+  }
+  .img-fluid{
+    height: 600px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .h{
+    height: 200px;
+  }
+  .btn-warning{
+    background-color: rgba(226, 57, 51, 0.473);
+    color: white;
+  }
+
+  body{
+    background-image: url('../images/login.jpg');
+    position: static;
+  }
+
+  .card{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-radius: 30px;
+    height: 0px;
+
+  }
+  
+  .col{
+        height: 0px;
+        color: azure;
+
+      }
+
+    
+</style>
+</head>
+<body>
+    <form id="registrationFormExample">
+    <section class="h">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card card-registration my-4">
+                <div class="row g-0">
+                  <div class="col-xl-6 d-none d-xl-block">
+                    <img src="../images/popcorn-logo-png-transparent.png"
+                      alt="Sample photo" class="img-fluid"
+                      style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-5 text-uppercase">Sign Up</h3>
+      
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <span id="fNameError"></span>
+                            <input type="text" id="regFName" class="form-control form-control-lg" required />
+                            <label class="form-label" for="regFName">First name</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <span id="lNameError"></span>
+                            <input type="text" id="regLName" class="form-control form-control-lg" required />
+                            <label class="form-label" for="regLName">Last name</label>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-4">
+                          <div class="form-outline">
+                            <span id="userNameError"></span>
+                            <input type="text" id="regUserName" class="form-control form-control-lg" required pattern="[a-zA-Z0-9]+" />
+                            <label class="form-label" for="regUsername">Username</label>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="row">
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <span id="userPassError"></span>
+                            <input type="password" id="regPassword" class="form-control form-control-lg" required />
+                            <label class="form-label" for="regPassword">Password</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <div class="form-outline">
+                            <span id="userConPassError"></span>
+                            <input type="password" id="regConfirmPassword" class="form-control form-control-lg" required />
+                            <label class="form-label" for="regConfirmPassword">Confirm Password</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <span id="userEmailError"></span>
+                        <input type="email" id="regEmail" class="form-control form-control-lg" required />
+                        <label class="form-label" for="regEmail">Email ID</label>
+                      </div>
+                      <div class="form-outline mb-4">
+                        <span id="userMobileError"></span>
+                        <input type="tel" id="regMobile" class="form-control form-control-lg" minlength="10" required />
+                        <label class="form-label" for="regMobile">Phone</label>
+                      </div>
+      
+                      <div class="d-flex justify-content-center pt-3">
+                        <button  type="reset" class="btn btn-light btn-lg bg-red">Reset all</button>
+                        <button  id="SubBtn" type="submit" class="btn btn-warning btn-lg ms-2">Submit form</button>
+                      </div>
+<br><br>
+                      <div class="form-outline mb-4">
+                        Already the user Please click on
+                        <a href="login1.html">Login</a>
+                      </div>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+<script src="/js/valid.js"></script>
+</body>
+</html>
